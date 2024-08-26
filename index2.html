@@ -8,30 +8,10 @@
     <meta name="author" content="Coles Security Solutions">
     <title>Coles Security Solutions | Professional Crowd Management in Baltimore</title>
 
-    <!-- Updated CSS link -->
+    <!-- Original CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
-    <!-- Add structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Coles Security Solutions",
-        "url": "https://colessecuritysolutions.com",
-        "logo": "https://github.com/JakeColes/JakeColes.github.io/blob/main/logo.png?raw=true",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-443-752-8788",
-            "contactType": "Customer Service"
-        },
-        "sameAs": [
-            "https://www.facebook.com/ColesSecuritySolutions",
-            "https://www.twitter.com/ColesSecuritySolutions"
-        ]
-    }
-    </script>
 
-    <!-- Google Analytics - Make sure to replace 'YOUR_TRACKING_ID' with your actual Google Analytics tracking ID -->
+    <!-- Google Analytics script remains unchanged -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -40,18 +20,39 @@
         gtag('config', 'YOUR_TRACKING_ID');
     </script>
 
-    <!-- Move styles to external CSS for better performance -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Keep the inline styles if they are crucial for design -->
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+        }
+        .navbar, .footer {
+            background-color: #000000;
+        }
+        .cta-button {
+            background-color: #007acc;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #005fa3;
+        }
+    </style>
 
-    <!-- Add favicon -->
+    <!-- Add a favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Add social media meta tags for better sharing -->
+    <!-- Add social media meta tags to improve sharing without impacting design -->
     <meta property="og:title" content="Coles Security Solutions | Professional Crowd Management in Baltimore">
     <meta property="og:description" content="Providing professional crowd management services for bars, restaurants, and nightclubs in Baltimore and surrounding suburbs.">
     <meta property="og:image" content="https://github.com/JakeColes/JakeColes.github.io/blob/main/logo.png?raw=true">
     <meta property="og:url" content="https://colessecuritysolutions.com">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Security header recommendation -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 </head>
 <body>
     <!-- Navbar -->
@@ -129,9 +130,4 @@
             <h2 class="text-3xl sm:text-4xl font-bold mb-8">Our Blog</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Blog Post Example -->
-                <div class="bg-gray-200 p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-black">Latest Security Trends</h3>
-                    <p class="mt-4 text-base sm:text-lg text-black">Stay updated with the latest trends in crowd management.</p>
-                    <a href="blog.html" class="cta-button mt-4 inline-block">Read More</a>
-                </div>
-               
+                <div class
