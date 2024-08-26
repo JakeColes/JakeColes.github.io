@@ -8,10 +8,10 @@
     <meta name="author" content="Coles Security Solutions">
     <title>Coles Security Solutions | Professional Crowd Management in Baltimore</title>
 
-    <!-- Original CSS link -->
+    <!-- Tailwind CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Google Analytics script remains unchanged -->
+    
+    <!-- Google Analytics - Replace 'YOUR_TRACKING_ID' with your actual Google Analytics tracking ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -20,7 +20,17 @@
         gtag('config', 'YOUR_TRACKING_ID');
     </script>
 
-    <!-- Keep the inline styles if they are crucial for design -->
+    <!-- Add favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Coles Security Solutions | Professional Crowd Management in Baltimore">
+    <meta property="og:description" content="Providing professional crowd management services for bars, restaurants, and nightclubs in Baltimore and surrounding suburbs.">
+    <meta property="og:image" content="https://github.com/JakeColes/JakeColes.github.io/blob/main/logo.png?raw=true">
+    <meta property="og:url" content="https://colessecuritysolutions.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Inline CSS for maintaining current styles -->
     <style>
         body {
             background-color: #1a1a1a;
@@ -40,19 +50,6 @@
             background-color: #005fa3;
         }
     </style>
-
-    <!-- Add a favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Add social media meta tags to improve sharing without impacting design -->
-    <meta property="og:title" content="Coles Security Solutions | Professional Crowd Management in Baltimore">
-    <meta property="og:description" content="Providing professional crowd management services for bars, restaurants, and nightclubs in Baltimore and surrounding suburbs.">
-    <meta property="og:image" content="https://github.com/JakeColes/JakeColes.github.io/blob/main/logo.png?raw=true">
-    <meta property="og:url" content="https://colessecuritysolutions.com">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Security header recommendation -->
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 </head>
 <body>
     <!-- Navbar -->
@@ -130,4 +127,17 @@
             <h2 class="text-3xl sm:text-4xl font-bold mb-8">Our Blog</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Blog Post Example -->
-                <div class
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-black">Latest Security Trends</h3>
+                    <p class="mt-4 text-base sm:text-lg text-black">Stay updated with the latest trends in crowd management.</p>
+                    <a href="blog.html" class="cta-button mt-4 inline-block">Read More</a>
+                </div>
+                <!-- More posts will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8
