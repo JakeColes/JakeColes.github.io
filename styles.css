@@ -1,19 +1,98 @@
-<style>
-    body {
-        background-color: #1a1a1a;
-        color: #e5e5e5;
-    }
+/* Basic Body Styling */
+body {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif; /* Ensures a readable font */
+    line-height: 1.6; /* Improves readability */
+    margin: 0; /* Removes default margin */
+}
+
+/* Navbar and Footer Styling */
+.navbar, .footer {
+    background-color: #000000;
+    padding: 15px 0; /* Adds padding for better spacing */
+}
+
+/* Button Styling */
+.cta-button {
+    background-color: #007acc;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Removes underline for links */
+    display: inline-block; /* Ensures buttons have proper block spacing */
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+}
+
+/* Focus State for Accessibility */
+.cta-button:focus {
+    outline: 3px solid #ffffff; /* Adds a clear focus outline */
+    outline-offset: 2px; /* Moves outline slightly away from the button */
+}
+
+/* Link Styling */
+a {
+    color: #e5e5e5; /* Matches body text color */
+    text-decoration: none; /* Removes default underline */
+}
+
+a:hover {
+    color: #007acc; /* Provides visual feedback on hover */
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Ensures headings stand out */
+    margin-bottom: 10px; /* Adds space below headings */
+    font-weight: 700; /* Makes headings bold */
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
     .navbar, .footer {
-        background-color: #000000;
+        padding: 10px 0; /* Reduces padding on smaller screens */
     }
+
     .cta-button {
-        background-color: #007acc;
-        color: white;
-        border-radius: 5px;
-        padding: 10px 20px;
-        transition: background-color 0.3s;
+        padding: 8px 16px; /* Adjusts button padding for smaller screens */
     }
-    .cta-button:hover {
-        background-color: #005fa3;
+
+    h1 {
+        font-size: 2em; /* Scales down large headings */
     }
-</style>
+
+    h2 {
+        font-size: 1.75em; /* Scales down medium headings */
+    }
+}
+
+/* Consistency in Naming Conventions */
+.footer {
+    text-align: center; /* Centers content in the footer */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Add these styles to your CSS */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .large-image {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 10px #fff;
+  }
