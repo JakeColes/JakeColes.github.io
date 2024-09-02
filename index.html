@@ -268,21 +268,21 @@
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div class="bg-gray-700 p-6 rounded-lg">
-            <h3 class="text-2xl font-semibold text-white">Bar Security</h3>
+            <h3 class="text-2xl font-semibold text-white">
+              Bouncers and Door Staff
+            </h3>
             <p class="mt-4 text-base sm:text-lg text-gray-300">
-              Our professional bouncers ensure that your bar operates smoothly
-              by managing crowds, checking IDs, and maintaining a safe
-              environment.
+              Our professional bouncers ensure that your bar or restaurant
+              operates smoothly by managing crowds, checking IDs, and
+              maintaining a safe environment.
             </p>
           </div>
           <div class="bg-gray-700 p-6 rounded-lg">
-            <h3 class="text-2xl font-semibold text-white">
-              Restaurant Security
-            </h3>
+            <h3 class="text-2xl font-semibold text-white">Private Events</h3>
             <p class="mt-4 text-base sm:text-lg text-gray-300">
-              We provide bouncers who are trained to handle the unique needs of
-              restaurants, focusing on customer service while maintaining order
-              and safety.
+              We provide door staff who are trained to handle the unique needs
+              of private events, focusing on customer service while maintaining
+              order and safety.
             </p>
           </div>
         </div>
@@ -422,9 +422,6 @@
             Send Message
           </button>
         </form>
-        <div class="mt-8 text-gray-400">
-          <p>Email: jake@colessecuritysolutions.com</p>
-        </div>
       </div>
     </section>
 
@@ -479,6 +476,39 @@
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
       }
+    </script>
+
+    <!-- Return to Top Button -->
+    <button
+      id="return-to-top"
+      class="hidden fixed bottom-8 right-8 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+    >
+      ↑ Top
+    </button>
+
+    <script>
+      // Get the button
+      var topButton = document.getElementById("return-to-top");
+
+      // When the user scrolls down 100px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          topButton.style.display = "block";
+        } else {
+          topButton.style.display = "none";
+        }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      topButton.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
     </script>
   </body>
 </html>

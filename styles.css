@@ -96,3 +96,23 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 90%;
     box-shadow: 0 0 10px #fff;
   }
+
+  /* Return to Top Button */
+#return-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 2rem; /* Position from the bottom */
+    right: 2rem; /* Position from the right */
+    background-color: #007acc; /* Button color */
+    color: white; /* Text color */
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 9999px; /* Fully rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: background-color 0.3s; /* Smooth hover transition */
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  #return-to-top:hover {
+    background-color: #005fa3; /* Hover state color */
+  }
+  
